@@ -1,101 +1,209 @@
-import Image from "next/image";
+import React from 'react';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Award,
+  BookOpen,
+  Briefcase,
+  User,
+  FileText,
+} from 'lucide-react';
 
-export default function Home() {
+const Resume = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
+      {/* Header Section */}
+      <div className="bg-gray-800 text-white p-8">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div>
+            <h1 className="text-4xl font-bold mb-2">Syeda Nawira Navaid</h1>
+            <p className="text-gray-300 text-lg">MSc Applied Zoology Candidate</p>
+          </div>
+          <div className="mt-4 md:mt-0 space-y-2">
+            <div className="flex items-center text-gray-300">
+              <Phone className="w-4 h-4 mr-2" />
+              <span>+92336-232-0500</span>
+            </div>
+            <div className="flex items-center text-gray-300">
+              <Mail className="w-4 h-4 mr-2" />
+              <span>syedanawira@gmail.com</span>
+            </div>
+            <div className="flex items-center text-gray-300">
+              <MapPin className="w-4 h-4 mr-2" />
+              <span>Flat No 105 Mateen Arcade Apartment, Gulshan-e-Iqbal Block 7, Karachi</span>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="p-8">
+        {/* Profile Section */}
+        <div className="mb-8">
+          <div className="flex items-center mb-4">
+            <User className="w-6 h-6 text-gray-600 mr-3" />
+            <h2 className="text-2xl font-bold text-gray-800">Profile</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            Dedicated MSc candidate in Applied Zoology with a strong academic background in biological sciences.
+            Proven track record of academic excellence complemented by technical certifications in digital literacy
+            and creative writing. Seeking opportunities to apply scientific knowledge and research skills in professional settings.
+          </p>
+        </div>
+
+        {/* Education + Certifications side by side */}
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
+          {/* Education */}
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center mb-6">
+                <BookOpen className="w-6 h-6 text-gray-600 mr-3" />
+                <h2 className="text-2xl font-bold text-gray-800">Education</h2>
+              </div>
+              <div className="space-y-6">
+                <div className="border-l-4 border-gray-600 pl-6 pb-6">
+                  <div className="flex items-center mb-2">
+                    <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                    <span className="text-sm text-gray-500">2024-Present</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">MSc in Zoology</h3>
+                  <p className="text-gray-600 font-medium">University of Karachi</p>
+                  <p className="text-gray-600 text-sm mt-1">Specialization in applied zoology (result pending)</p>
+                </div>
+
+                <div className="border-l-4 border-gray-600 pl-6 pb-6">
+                  <div className="flex items-center mb-2">
+                    <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                    <span className="text-sm text-gray-500">2021-2024</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">BSc Honors in Zoology</h3>
+                  <p className="text-gray-600 font-medium">University of Karachi</p>
+                </div>
+
+                <div className="border-l-4 border-gray-600 pl-6 pb-6">
+                  <div className="flex items-center mb-2">
+                    <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                    <span className="text-sm text-gray-500">2017-2019</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">HSC (Pre-Medical)</h3>
+                  <p className="text-gray-600 font-medium">Government Degree College for Women</p>
+                </div>
+
+                <div className="border-l-4 border-gray-600 pl-6">
+                  <div className="flex items-center mb-2">
+                    <Calendar className="w-4 h-4 text-gray-500 mr-2" />
+                    <span className="text-sm text-gray-500">2017</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">O-Levels (Science)</h3>
+                  <p className="text-gray-600 font-medium">APSACS</p>
+                  <p className="text-gray-600 text-sm mt-1">Completed Cambridge International Examinations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center mb-6">
+                <Award className="w-6 h-6 text-gray-600 mr-3" />
+                <h2 className="text-2xl font-bold text-gray-800">Certifications</h2>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Freelancing</h3>
+                  <p className="text-gray-600 text-sm">Digiskills</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Creative Writing</h3>
+                  <p className="text-gray-600 text-sm">Digiskills</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Digital Literacy</h3>
+                  <p className="text-gray-600 text-sm">Digiskills</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Skills + Research Work side by side */}
+        <div className="grid md:grid-cols-2 gap-12 pt-32">
+          {/* Skills */}
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center mb-6">
+                <Briefcase className="w-6 h-6 text-gray-600 mr-3" />
+                <h2 className="text-2xl font-bold text-gray-800">Skills</h2>
+              </div>
+              <div className="space-y-3">
+                {[
+                  'Microsoft Word',
+                  'Microsoft Excel',
+                  'Microsoft PowerPoint',
+                  'Data Analysis',
+                  'Creative Writing',
+                  'Digital Literacy',
+                ].map((skill, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between bg-gray-50 p-3 rounded-lg"
+                  >
+                    <span className="text-gray-800 font-medium">{skill}</span>
+                    <div className="flex space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <div
+                          key={i}
+                          className={`w-2 h-2 rounded-full ${i < 4 ? 'bg-gray-600' : 'bg-gray-300'}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Research Work */}
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center mb-6">
+                <FileText className="w-6 h-6 text-gray-600 mr-3" />
+                <h2 className="text-2xl font-bold text-gray-800">Research Work</h2>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Study of Endoparasites in Blackbuck</h3>
+                  <p className="text-gray-600 text-sm">At Karachi Zoo</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Fish Identification and Quality Assessment</h3>
+                  <p className="text-gray-600 text-sm">
+                    At Multiple Locations: Imtiaz Super Market, Musa Colony Fish Market
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+                  <h3 className="font-semibold text-gray-800">Vertebrate Pest & Their Management</h3>
+                  <p className="text-gray-600 text-sm">At Safari Park</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="bg-gray-50 p-6 text-center">
+        <p className="text-gray-500 text-sm">
+          This resume was created with modern web technologies for optimal viewing and printing.
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+export default Resume;
