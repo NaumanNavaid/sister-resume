@@ -13,7 +13,7 @@ import {
 
 const Resume = () => {
   return (
-    <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
+    <div className="max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden">
       {/* Header Section */}
       <div className="bg-gray-800 text-white p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
