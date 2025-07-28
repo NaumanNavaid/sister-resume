@@ -34,6 +34,14 @@ const Resume = () => {
               <MapPin className="w-4 h-4 mr-2" />
               <span>Flat No 105 Mateen Arcade Apartment, Gulshan-e-Iqbal Block 7, Karachi</span>
             </div>
+            <div className="flex items-center text-gray-300">
+              <User className="w-4 h-4 mr-2" />
+              <span>Father's Name: Syed Navaid Iqbal</span>
+            </div>
+            <div className="flex items-center text-gray-300">
+              <Calendar className="w-4 h-4 mr-2" />
+              <span>Date of Birth: May 2, 2000</span>
+            </div>
           </div>
         </div>
       </div>
@@ -197,11 +205,6 @@ const Resume = () => {
       </div>
 
       {/* Footer */}
-      <div className="bg-gray-50 p-6 text-center">
-        <p className="text-gray-500 text-sm">
-          This resume was created with modern web technologies for optimal viewing and printing.
-        </p>
-      </div>
     </div>
   );
 };
