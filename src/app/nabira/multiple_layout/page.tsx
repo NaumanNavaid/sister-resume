@@ -84,13 +84,13 @@ const ResumeLayouts = () => {
         </div>
       </div>
 
+      <section className="mb-6">
+        <h3 className="text-lg font-bold text-gray-800 border-b-2 border-blue-100 pb-2 mb-4">OBJECTIVE</h3>
+        <p className="text-gray-700 leading-relaxed">{resumeData.objective}</p>
+      </section>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-2">
-          <section className="mb-6">
-            <h3 className="text-lg font-bold text-gray-800 border-b-2 border-blue-100 pb-2 mb-4">OBJECTIVE</h3>
-            <p className="text-gray-700 leading-relaxed">{resumeData.objective}</p>
-          </section>
-
           <section className="mb-6">
             <h3 className="text-lg font-bold text-gray-800 border-b-2 border-blue-100 pb-2 mb-4">EDUCATION</h3>
             {resumeData.education.map((edu, index) => (
@@ -103,6 +103,16 @@ const ResumeLayouts = () => {
                   {edu.status && <span> ({edu.status})</span>}
                   {edu.specialization && <span className="block">{edu.specialization}</span>}
                 </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="mb-6">
+            <h3 className="text-lg font-bold text-gray-800 border-b-2 border-blue-100 pb-2 mb-4">PROJECTS & INTERNSHIP</h3>
+            {resumeData.projects.map((project, index) => (
+              <div key={index} className="mb-4">
+                <h4 className="font-semibold text-gray-800">{project.title}</h4>
+                <p className="text-gray-700">{project.description}</p>
               </div>
             ))}
           </section>
@@ -129,16 +139,6 @@ const ResumeLayouts = () => {
           </section>
         </div>
       </div>
-
-      <section>
-        <h3 className="text-lg font-bold text-gray-800 border-b-2 border-blue-100 pb-2 mb-4">PROJECTS & INTERNSHIP</h3>
-        {resumeData.projects.map((project, index) => (
-          <div key={index} className="mb-4">
-            <h4 className="font-semibold text-gray-800">{project.title}</h4>
-            <p className="text-gray-700">{project.description}</p>
-          </div>
-        ))}
-      </section>
     </div>
   );
 
