@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import {
   Mail,
   Phone,
@@ -9,11 +10,13 @@ import {
   Briefcase,
   User,
   FileText,
+
 } from 'lucide-react';
 
 const Resume = () => {
   return (
     <div className="max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden">
+        <Link href="/nabira/multiple_layout" className="text-blue-500 hover:underline">Multiple Layouts</Link>
       {/* Header Section */}
       <div className="bg-gray-800 text-white p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
