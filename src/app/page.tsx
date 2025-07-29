@@ -42,6 +42,20 @@ const Resume = () => {
               <Calendar className="w-4 h-4 mr-2" />
               <span>Date of Birth: May 2, 2000</span>
             </div>
+            <div className="flex space-x-4 mt-4">
+              <a 
+                href="/nabira" 
+                className="text-blue-300 hover:text-blue-200 underline transition-colors"
+              >
+                Portfolio
+              </a>
+              <a 
+                href="/nabira/multiple_layouts" 
+                className="text-blue-300 hover:text-blue-200 underline transition-colors"
+              >
+                Resume Layouts
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -203,8 +217,6 @@ const Resume = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
     </div>
   );
 };
