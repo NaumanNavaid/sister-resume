@@ -33,11 +33,11 @@ const MinimalLayout = () => (
             </div>
         </section>
 
-        <section className=" mt-[250px] pt-10">
+        <section className="  ">
             <h3 className="text-lg font-light text-gray-800 mb-6 text-center uppercase tracking-wide">Education</h3>
             <div className="space-y-6">
                 {resumeData.education.map((edu, index) => (
-                    <div key={index} className="text-center border-b border-gray-100 pb-4">
+                    <div key={index} className="text-center border-b border-gray-100 pb-4 pt-2">
                         <h4 className="font-medium text-gray-800 text-lg">{edu.degree}</h4>
                         <p className="text-gray-600 font-medium">{edu.institution}</p>
                         <div className="text-sm text-gray-500 mt-1">
@@ -61,7 +61,7 @@ const MinimalLayout = () => (
             </div>
         </section>
 
-        <section className="mb-8 mt-60 pt-10">
+        <section className="mb-8  ">
             <h3 className="text-lg font-light text-gray-800 mb-6 text-center uppercase tracking-wide">Projects</h3>
             <div className="space-y-6">
                 {resumeData.projects.map((project, index) => (
