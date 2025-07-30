@@ -31,19 +31,22 @@ const resumeData = {
       institution: "COMSATS University Islamabad",
       duration: "2016-2020",
       gpa: "3.55",
-      specialization: "Software Engineering"
+      specialization: "Software Engineering",
+      status: "Completed"
     },
     {
       degree: "Intermediate (Pre-Engineering)",
       institution: "Punjab College, Islamabad",
       duration: "2014-2016",
-      grade: "A"
+      grade: "A",
+      status: "Completed"
     },
     {
       degree: "Matriculation (Science)",
       institution: "Beaconhouse School System",
       duration: "2012-2014",
-      grade: "A"
+      grade: "A",
+      status: "Completed"
     }
   ],
   internship: {
