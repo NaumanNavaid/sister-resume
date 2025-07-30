@@ -1,125 +1,119 @@
+const resumeData = {
+  name: "Ayaan Farooq",
+  title: "Full Stack Developer",
+  contact: {
+    phone: "0312-1234567",
+    email: "ayaan.dev@example.com",
+    linkedin: "https://www.linkedin.com/in/ayaanfarooq",
+    address: "House #22, Street 10, Bahria Town Phase 4, Islamabad",
+    father: "Farooq Ahmed",
+    dob: "5th May 1998",
+    religion: "Islam",
+    nationality: "Pakistani"
+  },
+  objective:
+    "Passionate software developer with 3+ years of experience in building web apps using JavaScript, TypeScript, and modern frameworks. Eager to contribute to team success through hard work and clean code.",
+  experience: [
+    {
+      role: "Frontend Developer",
+      duration: "Jan 2022 – Present",
+      subjects: "React, Tailwind CSS, REST APIs"
+    },
+    {
+      role: "Junior Web Developer",
+      duration: "Jul 2020 – Dec 2021",
+      subjects: "HTML, CSS, JavaScript, WordPress"
+    }
+  ],
+  education: [
+    {
+      degree: "BS in Computer Science",
+      institution: "COMSATS University Islamabad",
+      duration: "2016-2020",
+      gpa: "3.55",
+      specialization: "Software Engineering"
+    },
+    {
+      degree: "Intermediate (Pre-Engineering)",
+      institution: "Punjab College, Islamabad",
+      duration: "2014-2016",
+      grade: "A"
+    },
+    {
+      degree: "Matriculation (Science)",
+      institution: "Beaconhouse School System",
+      duration: "2012-2014",
+      grade: "A"
+    }
+  ],
+  internship: {
+    organization: "Systems Limited",
+    department: "Web Applications",
+    duration: "Jul 2019 – Sep 2019"
+  },
+  projects: [
+    {
+      title: "E-Commerce Store (Next.js + Stripe)",
+      description:
+        "Developed a modern full-stack e-commerce app with product filtering, cart functionality, and secure Stripe payments."
+    }
+  ],
+  certifications: [
+    {
+      name: "JavaScript Algorithms and Data Structures",
+      institution: "freeCodeCamp"
+    },
+    {
+      name: "Full Stack Web Development Bootcamp",
+      institution: "Udemy – Angela Yu"
+    }
+  ],
+  conferences: [
+    {
+      name: "Pakistan Software Summit 2023",
+      institution: "NEST I/O",
+      date: "March 2023"
+    },
+    {
+      name: "React Pakistan Virtual Meetup",
+      institution: "DevCon PK",
+      date: "October 2022"
+    }
+  ],
+  keySkills: [
+    "Team collaboration",
+    "Code debugging",
+    "Client communication",
+    "Time management",
+    "Agile workflows",
+    "Attention to detail",
+    "Adaptability",
+    "Creative problem-solving",
+    "Continuous learning",
+    "Leadership"
+  ],
+  technicalSkills: [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "MongoDB",
+    "Git & GitHub",
+    "REST APIs",
+    "Postman",
+    "Figma"
+  ],
+  languages: [
+    {
+      language: "English",
+      proficiency: "Fluent"
+    },
+    {
+      language: "Urdu",
+      proficiency: "Native"
+    }
+  ]
+};
 
-  const resumeData = {
-    name: "Syeda Nabira Navaid",
-    title: "MS Medical Physics Candidate",
-    contact: {
-      phone: "0313-8466127",
-      email: "nabiranavaid@gmail.com",
-      linkedin: "https://www.linkedin.com/in/nabira-navaid-2b29b6257",
-      address: "Flat No 105 Mateen Arcade Apartments Gulshan-e-Iqbal Block 7, opposite al Jannat restaurant, Karachi",
-      father: "Syed Navaid Iqbal",
-      dob: "1st June 2001",
-      religion: "Islam",
-      nationality: "Pakistani"
-    },
-    objective: "Highly motivated and results-oriented student with a strong academic track record seeking a position in a reputable organization. I flourish in dynamic environments where I can contribute my skills and gain valuable experience working on meaningful projects.",
-    experience: [
-      {
-        role: "Home Tutor - Karachi Board",
-        duration: "8 months",
-        subjects: "Physics, Chemistry, Mathematics"
-      },
-      {
-        role: "Home Tutor - O Level",
-        duration: "1 year",
-        subjects: "Physics, Chemistry, Mathematics"
-      }
-    ],
-    education: [
-      {
-        degree: "MS in Medical Physics",
-        institution: "NED University of Engineering & Technology",
-        duration: "2025-Present",
-        status: "In Progress",
-        gpa: "4.0"
-      },
-      {
-        degree: "BS in Applied Physics",
-        institution: "NED University of Engineering & Technology",
-        duration: "2020-2024",
-        gpa: "3.644",
-        specialization: "Specialization in Electronics"
-      },
-      {
-        degree: "HSC (Pre-Engineering)",
-        institution: "Government Degree Science & Commerce College for Women, Block 16, F.B Area",
-        duration: "2018-2020",
-        grade: "B"
-      },
-      {
-        degree: "O'Level (Science)",
-        institution: "Army Public School & College System",
-        duration: "Till 2018",
-        grade: "B"
-      }
-    ],
-    internship: {
-      organization: "Jinnah Postgraduate Medical College (JPMC)",
-      department: "CybeKnife & Tomotherapy",
-      duration: "27 August 2022 to 12 September 2022"
-    },
-    projects: [
-      {
-        title: "Evaluation & Analysis of Infrared Radiations at Upper Atmosphere",
-        description: "Research and analytic project using data from NASA CERES website for a data range of 10 years from 2013 to 2022"
-      }
-    ],
-    certifications: [
-      {
-        name: "Applications of Nuclear Techniques & Radiation Effects",
-        institution: "Department of Physics, NED University of Engineering & Technology"
-      },
-      {
-        name: "2-day Workshop on GEOMAGNETIC OBSERVATION",
-        institution: "NED University of Engineering & Technology"
-      }
-    ],
-    conferences: [
-      {
-        name: "First International Conference on Applied Physics & Engineering (ICAPE)",
-        institution: "NED University",
-        date: "16th Sept 2021 – 17th Sept 2021"
-      },
-      {
-        name: "5th Annual National Conference on the International Day of Medical Physics",
-        institution: "ZIAUDDIN University",
-        date: "19th Nov 2022"
-      }
-    ],
-    keySkills: [
-      "Group collaboration",
-      "Organizational skills",
-      "Good working relationships",
-      "Communication skills",
-      "Welcome new responsibilities",
-      "Effective and efficient results delivery",
-      "Continuous learning",
-      "Creativity",
-      "Analytical skills",
-      "Leadership"
-    ],
-    technicalSkills: [
-      "MS Excel",
-      "MS Word",
-      "MS PowerPoint",
-      "Computer skills",
-      "Basics of Python",
-      "Basics of Matlab & Simulink",
-      "Problem solving"
-    ],
-    languages: [
-      {
-        language: "English",
-        proficiency: "Reading-Writing-Speaking"
-      },
-      {
-        language: "Urdu",
-        proficiency: "Reading-Writing-Speaking"
-      },
-      {
-        language: "Chinese",
-        proficiency: "Reading-Speaking"
-      }
-    ]
-  };
 export { resumeData };
