@@ -3,7 +3,7 @@ import { resumeData } from "@/app/data/Resumedata";
 
 
 const MinimalLayout = () => (
-    <div className="bg-white p-8 max-w-4xl mx-auto shadow-lg">
+    <div className="bg-white p-8 max-w-4xl mx-auto ">
         <header className="text-center border-b border-gray-200 pb-8 mb-8">
             <h1 className="text-3xl font-light text-gray-800 mb-2">{resumeData.name}</h1>
             <h2 className="text-lg text-gray-600 mb-4">{resumeData.title}</h2>
@@ -33,9 +33,9 @@ const MinimalLayout = () => (
             </div>
         </section>
 
-        <section className="  ">
+        <section className="mb-8">
             <h3 className="text-lg font-light text-gray-800 mb-6 text-center uppercase tracking-wide">Education</h3>
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {resumeData.education.map((edu, index) => (
                     <div key={index} className="text-center border-b border-gray-100 pb-4 pt-2">
                         <h4 className="font-medium text-gray-800 text-lg">{edu.degree}</h4>
@@ -53,7 +53,7 @@ const MinimalLayout = () => (
         </section>
 
         <section className="mb-8">
-            <h3 className="text-lg font-light text-gray-800 mb-6 text-center uppercase tracking-wide">Internship</h3>
+            <h3 className="text-lg font-light text-gray-800 mb-6 pt-12 text-center uppercase tracking-wide">Internship</h3>
             <div className="text-center border-b border-gray-100 pb-4">
                 <h4 className="font-medium text-gray-800 text-lg">{resumeData.internship.organization}</h4>
                 <p className="text-gray-600 font-medium">{resumeData.internship.department}</p>
@@ -73,7 +73,7 @@ const MinimalLayout = () => (
             </div>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-2 gap-8 mb-8">
             <section>
                 <h3 className="text-lg font-light text-gray-800 mb-4 text-center uppercase tracking-wide">Key Skills</h3>
                 <div className="text-center">
@@ -97,7 +97,7 @@ const MinimalLayout = () => (
             </section>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid  pt-20 grid-cols-3 gap-8 mb-8">
             <section>
                 <h3 className="text-lg font-light text-gray-800 mb-4 text-center uppercase tracking-wide">Languages</h3>
                 <div className="space-y-2">

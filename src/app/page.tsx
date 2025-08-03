@@ -13,18 +13,18 @@ import {
 
 const Resume = () => {
   return (
-    <div className="max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden">
+    <div className="max-w-4xl mx-auto bg-white  overflow-hidden">
       {/* Header Section */}
       <div className="bg-gray-800 text-white p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-4xl font-bold mb-2">Syeda Nawira Navaid</h1>
-            <p className="text-gray-300 text-lg">MSc Applied Zoology Candidate</p>
+            <p className="text-gray-300 text-lg">MSc Applied Zoology</p>
           </div>
           <div className="mt-4 md:mt-0 space-y-2">
             <div className="flex items-center text-gray-300">
               <Phone className="w-4 h-4 mr-2" />
-              <span>+92336-232-0500</span>
+              <span>+92-317-2566127</span>
             </div>
             <div className="flex items-center text-gray-300">
               <Mail className="w-4 h-4 mr-2" />
@@ -42,20 +42,6 @@ const Resume = () => {
               <Calendar className="w-4 h-4 mr-2" />
               <span>Date of Birth: May 2, 2000</span>
             </div>
-            <div className="flex space-x-4 mt-4">
-              <a 
-                href="/nabira" 
-                className="text-blue-300 hover:text-blue-200 underline transition-colors"
-              >
-                Portfolio
-              </a>
-              <a 
-                href="/nabira/multiple_layouts" 
-                className="text-blue-300 hover:text-blue-200 underline transition-colors"
-              >
-                Resume Layouts
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -68,7 +54,7 @@ const Resume = () => {
             <h2 className="text-2xl font-bold text-gray-800">Profile</h2>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            Dedicated MSc candidate in Applied Zoology with a strong academic background in biological sciences.
+            MSc in Applied Zoology with a strong academic background in biological sciences.
             Proven track record of academic excellence complemented by technical certifications in digital literacy
             and creative writing. Seeking opportunities to apply scientific knowledge and research skills in professional settings.
           </p>
@@ -154,7 +140,8 @@ const Resume = () => {
         </div>
 
         {/* Skills + Research Work side by side */}
-        <div className="grid md:grid-cols-2 gap-12 pt-32">
+        <div className="grid md:grid-cols-2 gap-12 pt-16">
+          {/* Skills */}
           {/* Skills */}
           <div className="space-y-8">
             <div>
@@ -170,6 +157,9 @@ const Resume = () => {
                   'Data Analysis',
                   'Creative Writing',
                   'Digital Literacy',
+                  'Communication',
+                  'Problem Solving',
+                  'Team Responsibility',
                 ].map((skill, index) => (
                   <div
                     key={index}
@@ -205,7 +195,7 @@ const Resume = () => {
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
                   <h3 className="font-semibold text-gray-800">Fish Identification and Quality Assessment</h3>
                   <p className="text-gray-600 text-sm">
-                    At Multiple Locations: Imtiaz Super Market, Musa Colony Fish Market
+                    At Multiple Locations: Imtiaz Super Market, Musa Colony Fish Market, Water Pump Fish Market
                   </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
@@ -214,6 +204,20 @@ const Resume = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Conferences / Seminars */}
+        <div className="mt-16">
+          <div className="flex items-center mb-6">
+            <Calendar className="w-6 h-6 text-gray-600 mr-3" />
+            <h2 className="text-2xl font-bold text-gray-800">Conferences / Seminars</h2>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600">
+            <h3 className="font-semibold text-gray-800">
+              International Conference on Marine Biodiversity, Socio-Environmental Aspects & Technology (ICMBSEAT)
+            </h3>
+            <p className="text-gray-600 text-sm">Attended </p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 const resumeData = {
   name: "Syeda Nabira Navaid",
-  title: "Medical Physics Graduate Student",
+  title: "Medical Physics Masters Student",
   contact: {
     phone: "0313-8466127",
     email: "nabiranavaid@gmail.com",

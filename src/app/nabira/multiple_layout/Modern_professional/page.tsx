@@ -85,7 +85,7 @@ const resumeData = {
 
 const ModernProfessionalResume = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8">
+    <div className="bg-gray-100 min-h-screen ">
       <div className="max-w-6xl mx-auto bg-white shadow-2xl flex">
         {/* Left Sidebar */}
         <div className="w-1/3 text-white p-8 relative overflow-hidden" style={{ backgroundColor: '#a3bdd8' }}>

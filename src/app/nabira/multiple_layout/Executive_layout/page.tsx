@@ -3,19 +3,19 @@ import { resumeData } from "@/app/data/Resumedata";
 import { Eye } from 'lucide-react';
 
 const ExecutiveLayout = () => (
-  <div className="bg-white max-w-4xl mx-auto shadow-lg print:shadow-none print:max-w-none">
-    <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-12 ">
+  <div className="bg-white max-w-4xl mx-auto shadow-lg print:shadow-none">
+    <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-10 ">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">{resumeData.name}</h1>
           <h2 className="text-base sm:text-lg opacity-90">{resumeData.title}</h2>
         </div>
-        <div className="text-left sm:text-right text-sm opacity-90">
+        <div className="text-left sm:text-right text-sm font-semibold">
           <div>{resumeData.contact.phone}</div>
           <div>{resumeData.contact.email}</div>
         </div>
       </div>
-      <div className="mt-4 text-sm opacity-80 space-y-1">
+      <div className="mt-4 text-lg  space-y-1">
         <div className="break-all">{resumeData.contact.linkedin}</div>
         <div>{resumeData.contact.address}</div>
         <div>Father's Name: {resumeData.contact.father} • DOB: {resumeData.contact.dob}</div>
